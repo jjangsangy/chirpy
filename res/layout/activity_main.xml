@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+        <requestFocus />
+
+        <TextView
+            android:id="@+id/mainTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="43dp"
+            android:text="@string/init_msg"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/genButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:onClick="generateKey"
+            android:text="Generate Key" />
+
+        <EditText
+            android:id="@+id/msgTextInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/mainTextView"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/sendButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:onClick="sendTweet"
+            android:text="Tweet" />
+
+        <Button
+            android:id="@+id/getTweetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="89dp"
+            android:onClick="receiveTweet"
+            android:text="Receive Tweet" />
+
+</RelativeLayout>
