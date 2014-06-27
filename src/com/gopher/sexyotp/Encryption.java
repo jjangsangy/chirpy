@@ -18,9 +18,7 @@ public class Encryption{
 	            byteMessage[i] = (byte) (byteMessage[i]^key[i]);
 	        }
 	        
-	        return Base64.encodeToString(byteMessage, 0)
-                    +"#chirpy#"
-                    +Base64.encodeToString(Array.copyOfRange(key,128,132));
+	        return Base64.encodeToString(byteMessage, 0);
 		 
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block

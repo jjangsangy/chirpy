@@ -31,8 +31,8 @@ public class Message {
 
     public String recieveMessage(String df){
         if (receiveMessagesLeft > 0){
-            String encryptedString = GET_DAT_TWEET;
             byte[] key = keyManagement.getByteArray(df);
+            String encryptedString = GET_DAT_TWEET(key);
             String decryptedString = Encryption.decrypt(encryptedString,key);
             return decryptedString;
         }
