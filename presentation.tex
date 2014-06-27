@@ -1,0 +1,68 @@
+\documentclass{beamer}
+
+\usepackage{verbatim}
+
+\usetheme{Warsaw}
+
+\title{Chirpy!}
+\begin{document}
+
+\begin{frame}
+    \maketitle
+\end{frame}
+
+\begin{frame}
+    \frametitle{What is it?}
+    A cryptographic chat application that:
+    \begin{itemize}
+        \item 
+            uses sensors to generate entropy.
+        \item
+            uses Twitter to host the ciphertext.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{State of Android/Linux Random}
+    \begin{itemize}
+        \item 
+            \texttt{SecureRandom} is a psuedo random number generator that is seeded
+            at boot
+        \item
+            /dev/random and /dev/urandom are psuedo random number generator
+            gathering entropy from keyboard timings, mouse timings, etc.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Our Idea}
+    \begin{itemize}
+        \item
+            Android devices have sensors!
+        \item
+            We worked with accelerometer
+    \end{itemize}
+\end{frame} 
+
+\begin{frame}
+    \frametitle{State of ``Twitter Chats''}
+    \begin{itemize}
+        \item
+            Twitter is of the most reliable and public ways to post messages.
+        \item
+            It has been used to mobilize people during unrest.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Our Idea}
+    \begin{itemize}
+        \item 
+            Some messages should be private!
+        \item
+            We facilitate posting ciphertext to Twitter
+    \end{itemize}
+\end{frame}
+
+
+\end{document}
