@@ -10,8 +10,8 @@ public class Message {
         df=decryptionFile;
     }
     
-    int sendMessagesLeft = RandomAccessFile(ef,"r")/128;
-    int receiveMessagesLeft = RandomAccessFile(df,"r")/128;
+    int sendMessagesLeft = RandomAccessFile(ef,"r")/132;
+    int receiveMessagesLeft = RandomAccessFile(df,"r")/132;
 
 
     

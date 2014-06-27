@@ -7,9 +7,9 @@ public class keyManagement {
 
 		try {
 			RandomAccessFile raf = new RandomAccessFile(file, "rw");
-			byte[] key = new byte[192];
-			raf.read(key, (int)raf.length()-129, 128);
-			raf.setLength(raf.length()-128);
+			byte[] key = new byte[132];
+			raf.read(key, (int)raf.length()-132-1, 132);
+			raf.setLength(raf.length()-132);
 			raf.close();
 			return key;
 		} catch (Exception e) {

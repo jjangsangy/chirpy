@@ -6,6 +6,10 @@ import android.util.Base64;
 
 public class Encryption{
 
+        // key is 132 byte array
+        // 128 bytes for encryption
+        // 4 for indexing
+
 	public static String encrypt(String message, byte[] key){
 		try {
 			byte[] byteMessage = message.getBytes("US-ASCII");
@@ -14,7 +18,9 @@ public class Encryption{
 	            byteMessage[i] = (byte) (byteMessage[i]^key[i]);
 	        }
 	        
-	        return Base64.encodeToString(byteMessage, 0);
+	        return Base64.encodeToString(byteMessage, 0)
+                    +"#chirpy#"
+                    +Base64.encodeToString(Array.copyOfRange(key,128,132));
 		 
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
