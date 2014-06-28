@@ -1,4 +1,4 @@
-package com.example.test;
+package com.gopher.sexyotp;
 
 import java.io.RandomAccessFile;
 
