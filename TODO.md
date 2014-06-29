@@ -2,23 +2,23 @@ TODO
 =====
 
 Twitter class
--------------
-- send tweet
-- check tweet by hashtag
-- BONUS - account support
+--------------
+- [ ] send tweet
+- [ ] check tweet by hashtag
+- [ ] BONUS - account support
 
 Accelermeter Refactor
 ----------------------
-- Move out of MainActivity
-- generate key of arbitary length
+- [ ] Move out of MainActivity
+- [ ] generate key of arbitary length
 
 AESEncryption class
 -------------------
-- encrypt text in CBC mode
+- [ ] encrypt text in CBC mode
 
-UI
+UI Views
 -------
-- send message
-- check message
-- generate key
-- share key
+- [ ] send message
+- [ ] check message
+- [ ] generate key
+- [ ] share key
